@@ -1,6 +1,6 @@
 ﻿namespace pry_integrador
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
