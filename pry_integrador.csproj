@@ -72,18 +72,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registro de Usuarios\FormRegistroUsers.resx">
-      <DependentUpon>FormRegistroUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registro Pacientes\FormDatosContacto.resx">
-      <DependentUpon>FormDatosContacto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registro Pacientes\FormDatosPersonales.resx">
-      <DependentUpon>FormDatosPersonales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registro Pacientes\FormHistorialMedico.resx">
-      <DependentUpon>FormHistorialMedico.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
