@@ -16,5 +16,10 @@ namespace pry_integrador
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
