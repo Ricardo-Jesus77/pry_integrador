@@ -54,6 +54,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro de Usuarios\FormRegistroUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro de Usuarios\FormRegistroUsers.Designer.cs">
+      <DependentUpon>FormRegistroUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro Pacientes\FormDatosContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Pacientes\FormDatosContacto.Designer.cs">
+      <DependentUpon>FormDatosContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro Pacientes\FormDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Pacientes\FormDatosPersonales.Designer.cs">
+      <DependentUpon>FormDatosPersonales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro Pacientes\FormHistorialMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Pacientes\FormHistorialMedico.Designer.cs">
+      <DependentUpon>FormHistorialMedico.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +87,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registro de Usuarios\FormRegistroUsers.resx">
+      <DependentUpon>FormRegistroUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro Pacientes\FormDatosContacto.resx">
+      <DependentUpon>FormDatosContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro Pacientes\FormDatosPersonales.resx">
+      <DependentUpon>FormDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro Pacientes\FormHistorialMedico.resx">
+      <DependentUpon>FormHistorialMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
