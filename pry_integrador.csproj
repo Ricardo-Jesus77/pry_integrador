@@ -58,6 +58,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medicos\Gestion de medicos\FormGestionMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicos\Gestion de medicos\FormGestionMedicos.Designer.cs">
+      <DependentUpon>FormGestionMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\Registro de medicos\FormRegistroMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicos\Registro de medicos\FormRegistroMedicos.Designer.cs">
+      <DependentUpon>FormRegistroMedicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro de Pacientes\FormContacto.cs">
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicos\Gestion de medicos\FormGestionMedicos.resx">
+      <DependentUpon>FormGestionMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicos\Registro de medicos\FormRegistroMedicos.resx">
+      <DependentUpon>FormRegistroMedicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,5 +159,6 @@
     <Content Include="Recursos\recorda_blue.png" />
     <Content Include="Recursos\repo_blue.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
