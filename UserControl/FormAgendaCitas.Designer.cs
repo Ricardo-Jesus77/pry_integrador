@@ -90,7 +90,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(48, 136);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(242, 22);
             this.textBox1.TabIndex = 3;
             // 
             // label3
@@ -106,7 +106,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(48, 204);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.Size = new System.Drawing.Size(242, 22);
             this.textBox3.TabIndex = 6;
             // 
             // label4
@@ -147,7 +147,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(48, 267);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(242, 22);
             this.textBox2.TabIndex = 12;
             // 
             // label7
@@ -163,7 +163,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(318, 136);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.Size = new System.Drawing.Size(241, 22);
             this.textBox4.TabIndex = 14;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -196,8 +196,9 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(318, 267);
+            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.Size = new System.Drawing.Size(241, 138);
             this.textBox5.TabIndex = 18;
             // 
             // button1
@@ -305,7 +306,7 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 24);
             this.comboBox3.TabIndex = 30;
             // 
-            // FormInicio
+            // FormAgendaCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -339,7 +340,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "FormInicio";
+            this.Name = "FormAgendaCitas";
             this.Text = "FormInicio";
             this.Load += new System.EventHandler(this.FormInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

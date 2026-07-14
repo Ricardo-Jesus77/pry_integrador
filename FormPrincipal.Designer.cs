@@ -48,7 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelForms = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar_Sesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ayuda)).BeginInit();
@@ -233,6 +233,7 @@
             this.btn_Agenda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Agenda.TabIndex = 1;
             this.btn_Agenda.TabStop = false;
+            this.btn_Agenda.Click += new System.EventHandler(this.btn_Agenda_Click);
             this.btn_Agenda.MouseLeave += new System.EventHandler(this.btn_Agenda_MouseLeave);
             this.btn_Agenda.MouseHover += new System.EventHandler(this.btn_Agenda_MouseHover);
             // 
@@ -324,14 +325,14 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // panel1
+            // panelForms
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(261, 118);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1628, 817);
-            this.panel1.TabIndex = 2;
+            this.panelForms.BackColor = System.Drawing.Color.White;
+            this.panelForms.Location = new System.Drawing.Point(261, 118);
+            this.panelForms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(1628, 817);
+            this.panelForms.TabIndex = 2;
             // 
             // FormPrincipal
             // 
@@ -339,7 +340,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1922, 969);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelForms);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -372,7 +373,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelForms;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

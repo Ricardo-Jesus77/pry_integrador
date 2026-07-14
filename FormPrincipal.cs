@@ -1,4 +1,5 @@
 ﻿using pry_integrador.Properties;
+using pry_integrador.UserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,15 @@ namespace pry_integrador
 {
     public partial class FormPrincipal : Form
     {
+        private void CargarVista(Form formulario)
+        {
+            panelForms.Controls.Clear();
+            formulario.TopLevel = false;        
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;  
+            panelForms.Controls.Add(formulario);
+            formulario.Show();
+        }
         public FormPrincipal()
         {
             InitializeComponent();
@@ -162,6 +172,11 @@ namespace pry_integrador
         private void btn_cerrar_Sesion_MouseLeave(object sender, EventArgs e)
         {
             btn_cerrar_Sesion.Image = Resources.cerrar_png;
+        }
+
+        private void btn_Agenda_Click(object sender, EventArgs e)
+        {
+            CargarVista(new FormAgendaCitas());
         }
     }
 }
