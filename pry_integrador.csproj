@@ -90,6 +90,12 @@
     <Compile Include="Registro de Pacientes\FormHistorialMedico.Designer.cs">
       <DependentUpon>FormHistorialMedico.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\FormAgendaCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl\FormAgendaCitas.Designer.cs">
+      <DependentUpon>FormAgendaCitas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +116,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registro de Pacientes\FormContacto.resx">
       <DependentUpon>FormContacto.cs</DependentUpon>
@@ -119,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro de Pacientes\FormHistorialMedico.resx">
       <DependentUpon>FormHistorialMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\FormAgendaCitas.resx">
+      <DependentUpon>FormAgendaCitas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,8 +143,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="UserControl\" />
+    <Content Include="Recursos\ag_blue.png" />
+    <Content Include="Recursos\ayuda_blue.png" />
+    <Content Include="Recursos\cierra_blue.png" />
+    <Content Include="Recursos\conf_blue.png" />
+    <Content Include="Recursos\cons_blue.png" />
+    <Content Include="Recursos\espe_blue.png" />
+    <Content Include="Recursos\in_blue.png" />
+    <Content Include="Recursos\med_blue.png" />
+    <Content Include="Recursos\msj_blue.png" />
+    <Content Include="Recursos\pa_blue.png" />
+    <Content Include="Recursos\recorda_blue.png" />
+    <Content Include="Recursos\repo_blue.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

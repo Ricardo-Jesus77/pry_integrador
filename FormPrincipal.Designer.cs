@@ -30,26 +30,38 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_cerrar_Sesion = new System.Windows.Forms.PictureBox();
+            this.btn_ayuda = new System.Windows.Forms.PictureBox();
+            this.btn_configuracion = new System.Windows.Forms.PictureBox();
+            this.btn_mensajes = new System.Windows.Forms.PictureBox();
+            this.btn_recordatorios = new System.Windows.Forms.PictureBox();
+            this.btn_reportes = new System.Windows.Forms.PictureBox();
+            this.btn_especialidades = new System.Windows.Forms.PictureBox();
+            this.btn_consultorios = new System.Windows.Forms.PictureBox();
+            this.btn_medicos = new System.Windows.Forms.PictureBox();
+            this.btn_pacientes = new System.Windows.Forms.PictureBox();
+            this.btn_Agenda = new System.Windows.Forms.PictureBox();
+            this.btn_inicio = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panelForms = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar_Sesion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ayuda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_configuracion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_mensajes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_recordatorios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_reportes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_especialidades)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_consultorios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_medicos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_pacientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Agenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,19 +72,20 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.button12, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.button11, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.button10, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.button9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_cerrar_Sesion, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.btn_ayuda, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.btn_configuracion, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.btn_mensajes, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.btn_recordatorios, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.btn_reportes, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btn_especialidades, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btn_consultorios, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btn_medicos, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn_pacientes, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Agenda, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_inicio, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 118);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 12;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
@@ -90,6 +103,153 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(243, 832);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // btn_cerrar_Sesion
+            // 
+            this.btn_cerrar_Sesion.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar_Sesion.Image")));
+            this.btn_cerrar_Sesion.Location = new System.Drawing.Point(3, 762);
+            this.btn_cerrar_Sesion.Name = "btn_cerrar_Sesion";
+            this.btn_cerrar_Sesion.Size = new System.Drawing.Size(237, 63);
+            this.btn_cerrar_Sesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_cerrar_Sesion.TabIndex = 11;
+            this.btn_cerrar_Sesion.TabStop = false;
+            this.btn_cerrar_Sesion.MouseLeave += new System.EventHandler(this.btn_cerrar_Sesion_MouseLeave);
+            this.btn_cerrar_Sesion.MouseHover += new System.EventHandler(this.btn_cerrar_Sesion_MouseHover);
+            // 
+            // btn_ayuda
+            // 
+            this.btn_ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayuda.Image")));
+            this.btn_ayuda.Location = new System.Drawing.Point(3, 693);
+            this.btn_ayuda.Name = "btn_ayuda";
+            this.btn_ayuda.Size = new System.Drawing.Size(237, 63);
+            this.btn_ayuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_ayuda.TabIndex = 10;
+            this.btn_ayuda.TabStop = false;
+            this.btn_ayuda.MouseLeave += new System.EventHandler(this.btn_ayuda_MouseLeave);
+            this.btn_ayuda.MouseHover += new System.EventHandler(this.btn_ayuda_MouseHover);
+            // 
+            // btn_configuracion
+            // 
+            this.btn_configuracion.Image = ((System.Drawing.Image)(resources.GetObject("btn_configuracion.Image")));
+            this.btn_configuracion.Location = new System.Drawing.Point(3, 624);
+            this.btn_configuracion.Name = "btn_configuracion";
+            this.btn_configuracion.Size = new System.Drawing.Size(237, 63);
+            this.btn_configuracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_configuracion.TabIndex = 9;
+            this.btn_configuracion.TabStop = false;
+            this.btn_configuracion.MouseLeave += new System.EventHandler(this.btn_configuracion_MouseLeave);
+            this.btn_configuracion.MouseHover += new System.EventHandler(this.btn_configuracion_MouseHover);
+            // 
+            // btn_mensajes
+            // 
+            this.btn_mensajes.Image = ((System.Drawing.Image)(resources.GetObject("btn_mensajes.Image")));
+            this.btn_mensajes.Location = new System.Drawing.Point(3, 555);
+            this.btn_mensajes.Name = "btn_mensajes";
+            this.btn_mensajes.Size = new System.Drawing.Size(237, 63);
+            this.btn_mensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_mensajes.TabIndex = 8;
+            this.btn_mensajes.TabStop = false;
+            this.btn_mensajes.MouseLeave += new System.EventHandler(this.btn_mensajes_MouseLeave);
+            this.btn_mensajes.MouseHover += new System.EventHandler(this.btn_mensajes_MouseHover);
+            // 
+            // btn_recordatorios
+            // 
+            this.btn_recordatorios.Image = ((System.Drawing.Image)(resources.GetObject("btn_recordatorios.Image")));
+            this.btn_recordatorios.Location = new System.Drawing.Point(3, 486);
+            this.btn_recordatorios.Name = "btn_recordatorios";
+            this.btn_recordatorios.Size = new System.Drawing.Size(237, 63);
+            this.btn_recordatorios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_recordatorios.TabIndex = 7;
+            this.btn_recordatorios.TabStop = false;
+            this.btn_recordatorios.MouseLeave += new System.EventHandler(this.btn_recordatorios_MouseLeave);
+            this.btn_recordatorios.MouseHover += new System.EventHandler(this.btn_recordatorios_MouseHover);
+            // 
+            // btn_reportes
+            // 
+            this.btn_reportes.Image = ((System.Drawing.Image)(resources.GetObject("btn_reportes.Image")));
+            this.btn_reportes.Location = new System.Drawing.Point(3, 417);
+            this.btn_reportes.Name = "btn_reportes";
+            this.btn_reportes.Size = new System.Drawing.Size(237, 63);
+            this.btn_reportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_reportes.TabIndex = 6;
+            this.btn_reportes.TabStop = false;
+            this.btn_reportes.MouseLeave += new System.EventHandler(this.btn_reportes_MouseLeave);
+            this.btn_reportes.MouseHover += new System.EventHandler(this.btn_reportes_MouseHover);
+            // 
+            // btn_especialidades
+            // 
+            this.btn_especialidades.Image = ((System.Drawing.Image)(resources.GetObject("btn_especialidades.Image")));
+            this.btn_especialidades.Location = new System.Drawing.Point(3, 348);
+            this.btn_especialidades.Name = "btn_especialidades";
+            this.btn_especialidades.Size = new System.Drawing.Size(237, 63);
+            this.btn_especialidades.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_especialidades.TabIndex = 5;
+            this.btn_especialidades.TabStop = false;
+            this.btn_especialidades.MouseLeave += new System.EventHandler(this.btn_especialidades_MouseLeave);
+            this.btn_especialidades.MouseHover += new System.EventHandler(this.btn_especialidades_MouseHover);
+            // 
+            // btn_consultorios
+            // 
+            this.btn_consultorios.Image = ((System.Drawing.Image)(resources.GetObject("btn_consultorios.Image")));
+            this.btn_consultorios.Location = new System.Drawing.Point(3, 279);
+            this.btn_consultorios.Name = "btn_consultorios";
+            this.btn_consultorios.Size = new System.Drawing.Size(237, 63);
+            this.btn_consultorios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_consultorios.TabIndex = 4;
+            this.btn_consultorios.TabStop = false;
+            this.btn_consultorios.MouseLeave += new System.EventHandler(this.btn_consultorios_MouseLeave);
+            this.btn_consultorios.MouseHover += new System.EventHandler(this.btn_consultorios_MouseHover);
+            // 
+            // btn_medicos
+            // 
+            this.btn_medicos.Image = ((System.Drawing.Image)(resources.GetObject("btn_medicos.Image")));
+            this.btn_medicos.Location = new System.Drawing.Point(3, 210);
+            this.btn_medicos.Name = "btn_medicos";
+            this.btn_medicos.Size = new System.Drawing.Size(237, 63);
+            this.btn_medicos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_medicos.TabIndex = 3;
+            this.btn_medicos.TabStop = false;
+            this.btn_medicos.MouseLeave += new System.EventHandler(this.btn_medicos_MouseLeave);
+            this.btn_medicos.MouseHover += new System.EventHandler(this.btn_medicos_MouseHover);
+            // 
+            // btn_pacientes
+            // 
+            this.btn_pacientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_pacientes.Image")));
+            this.btn_pacientes.Location = new System.Drawing.Point(3, 141);
+            this.btn_pacientes.Name = "btn_pacientes";
+            this.btn_pacientes.Size = new System.Drawing.Size(237, 63);
+            this.btn_pacientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_pacientes.TabIndex = 2;
+            this.btn_pacientes.TabStop = false;
+            this.btn_pacientes.Click += new System.EventHandler(this.btn_pacientes_Click);
+            this.btn_pacientes.MouseLeave += new System.EventHandler(this.btn_pacientes_MouseLeave);
+            this.btn_pacientes.MouseHover += new System.EventHandler(this.btn_pacientes_MouseHover);
+            // 
+            // btn_Agenda
+            // 
+            this.btn_Agenda.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agenda.Image")));
+            this.btn_Agenda.Location = new System.Drawing.Point(3, 72);
+            this.btn_Agenda.Name = "btn_Agenda";
+            this.btn_Agenda.Size = new System.Drawing.Size(237, 63);
+            this.btn_Agenda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Agenda.TabIndex = 1;
+            this.btn_Agenda.TabStop = false;
+            this.btn_Agenda.Click += new System.EventHandler(this.btn_Agenda_Click);
+            this.btn_Agenda.MouseLeave += new System.EventHandler(this.btn_Agenda_MouseLeave);
+            this.btn_Agenda.MouseHover += new System.EventHandler(this.btn_Agenda_MouseHover);
+            // 
+            // btn_inicio
+            // 
+            this.btn_inicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_inicio.Image")));
+            this.btn_inicio.Location = new System.Drawing.Point(3, 3);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(237, 63);
+            this.btn_inicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_inicio.TabIndex = 0;
+            this.btn_inicio.TabStop = false;
+            this.btn_inicio.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.btn_inicio.MouseLeave += new System.EventHandler(this.btn_inicio_MouseLeave);
+            this.btn_inicio.MouseHover += new System.EventHandler(this.btn_inicio_MouseHover);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 6;
@@ -104,122 +264,19 @@
             this.tableLayoutPanel2.Controls.Add(this.label2, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 3, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(13, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(13, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1877, 109);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1877, 110);
             this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 63);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 63);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 141);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 63);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 210);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(237, 63);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(3, 279);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(237, 63);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(3, 348);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(237, 63);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(3, 417);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(237, 63);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(3, 486);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(237, 63);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(3, 555);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(237, 63);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(3, 624);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(237, 63);
-            this.button10.TabIndex = 9;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(3, 693);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(237, 63);
-            this.button11.TabIndex = 10;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(3, 762);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(237, 64);
-            this.button12.TabIndex = 11;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(262, 118);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1628, 817);
-            this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(77, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -249,32 +306,60 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(1565, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(1565, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 92);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(1461, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(1461, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(98, 92);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            // 
+            // panelForms
+            // 
+            this.panelForms.BackColor = System.Drawing.Color.White;
+            this.panelForms.Location = new System.Drawing.Point(261, 118);
+            this.panelForms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(1628, 817);
+            this.panelForms.TabIndex = 2;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1902, 958);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1922, 969);
+            this.Controls.Add(this.panelForms);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormPrincipal";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar_Sesion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ayuda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_configuracion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_mensajes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_recordatorios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_reportes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_especialidades)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_consultorios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_medicos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_pacientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Agenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -287,25 +372,25 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelForms;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btn_cerrar_Sesion;
+        private System.Windows.Forms.PictureBox btn_ayuda;
+        private System.Windows.Forms.PictureBox btn_configuracion;
+        private System.Windows.Forms.PictureBox btn_mensajes;
+        private System.Windows.Forms.PictureBox btn_recordatorios;
+        private System.Windows.Forms.PictureBox btn_reportes;
+        private System.Windows.Forms.PictureBox btn_especialidades;
+        private System.Windows.Forms.PictureBox btn_consultorios;
+        private System.Windows.Forms.PictureBox btn_medicos;
+        private System.Windows.Forms.PictureBox btn_pacientes;
+        private System.Windows.Forms.PictureBox btn_Agenda;
+        private System.Windows.Forms.PictureBox btn_inicio;
     }
 }
 
