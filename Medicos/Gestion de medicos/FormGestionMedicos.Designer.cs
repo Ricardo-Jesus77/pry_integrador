@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGestionMedicos));
             this.pnelSup = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnelContenido = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,8 +41,6 @@
             this.colCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEditar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.colEliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnelSup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnelContenido.SuspendLayout();
@@ -52,6 +50,7 @@
             // pnelSup
             // 
             this.pnelSup.AutoScroll = true;
+            this.pnelSup.BackColor = System.Drawing.Color.White;
             this.pnelSup.Controls.Add(this.button1);
             this.pnelSup.Controls.Add(this.pictureBox1);
             this.pnelSup.Controls.Add(this.textBox1);
@@ -59,8 +58,29 @@
             this.pnelSup.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnelSup.Location = new System.Drawing.Point(0, 0);
             this.pnelSup.Name = "pnelSup";
-            this.pnelSup.Size = new System.Drawing.Size(1125, 90);
+            this.pnelSup.Size = new System.Drawing.Size(1606, 90);
             this.pnelSup.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(621, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 30);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Nuevo Medico";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(18, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
@@ -79,50 +99,33 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Gestion de Medicos";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(621, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Nuevo Medico";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // pnelContenido
             // 
+            this.pnelContenido.AutoSize = true;
+            this.pnelContenido.BackColor = System.Drawing.Color.White;
             this.pnelContenido.Controls.Add(this.dataGridView1);
             this.pnelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnelContenido.Location = new System.Drawing.Point(0, 90);
             this.pnelContenido.Name = "pnelContenido";
-            this.pnelContenido.Size = new System.Drawing.Size(1125, 454);
+            this.pnelContenido.Size = new System.Drawing.Size(1606, 671);
             this.pnelContenido.TabIndex = 1;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNombre,
             this.colTelefono,
             this.colCedula,
             this.colEspecialidad,
-            this.colCorreo,
-            this.colEditar,
-            this.colEliminar});
-            this.dataGridView1.Location = new System.Drawing.Point(4, 7);
+            this.colCorreo});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1116, 447);
+            this.dataGridView1.Size = new System.Drawing.Size(1606, 671);
             this.dataGridView1.TabIndex = 0;
             // 
             // colNombre
@@ -160,25 +163,11 @@
             this.colCorreo.Name = "colCorreo";
             this.colCorreo.Width = 150;
             // 
-            // colEditar
-            // 
-            this.colEditar.HeaderText = "Editar";
-            this.colEditar.MinimumWidth = 8;
-            this.colEditar.Name = "colEditar";
-            this.colEditar.Width = 150;
-            // 
-            // colEliminar
-            // 
-            this.colEliminar.HeaderText = "Eliminar";
-            this.colEliminar.MinimumWidth = 8;
-            this.colEliminar.Name = "colEliminar";
-            this.colEliminar.Width = 150;
-            // 
             // FormGestionMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 544);
+            this.ClientSize = new System.Drawing.Size(1606, 761);
             this.Controls.Add(this.pnelContenido);
             this.Controls.Add(this.pnelSup);
             this.Name = "FormGestionMedicos";
@@ -189,6 +178,7 @@
             this.pnelContenido.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -206,7 +196,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colCedula;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEspecialidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCorreo;
-        private System.Windows.Forms.DataGridViewImageColumn colEditar;
-        private System.Windows.Forms.DataGridViewImageColumn colEliminar;
     }
 }
