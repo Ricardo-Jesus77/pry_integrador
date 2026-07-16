@@ -183,5 +183,17 @@ namespace pry_integrador
         {
 
         }
+
+        private void btn_ayuda_Click(object sender, EventArgs e)
+        {
+            CargarVista(new FormHelp());
+        }
+
+        private void btn_cerrar_Sesion_Click(object sender, EventArgs e)
+        {
+            FormCerrarSesion formCerrar = new FormCerrarSesion();
+            formCerrar.StartPosition = FormStartPosition.CenterScreen;
+            formCerrar.ShowDialog();
+        }
     }
 }

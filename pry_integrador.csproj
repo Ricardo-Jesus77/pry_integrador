@@ -96,6 +96,18 @@
     <Compile Include="UserControl\FormAgendaCitas.Designer.cs">
       <DependentUpon>FormAgendaCitas.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\FormCerrarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl\FormCerrarSesion.Designer.cs">
+      <DependentUpon>FormCerrarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl\FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\FormAgendaCitas.resx">
       <DependentUpon>FormAgendaCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\FormCerrarSesion.resx">
+      <DependentUpon>FormCerrarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
