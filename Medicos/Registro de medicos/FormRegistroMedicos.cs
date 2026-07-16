@@ -17,6 +17,9 @@ namespace pry_integrador.Medicos.Registro_de_medicos
             InitializeComponent();
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
