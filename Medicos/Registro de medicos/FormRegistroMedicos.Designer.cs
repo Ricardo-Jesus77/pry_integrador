@@ -30,15 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btonCancelar = new System.Windows.Forms.Button();
+            this.btonRegistrar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textCedula = new System.Windows.Forms.TextBox();
+            this.textMail = new System.Windows.Forms.TextBox();
+            this.textTelefono = new System.Windows.Forms.TextBox();
+            this.textApellidoM = new System.Windows.Forms.TextBox();
+            this.textApellidoP = new System.Windows.Forms.TextBox();
+            this.textNombreM = new System.Windows.Forms.TextBox();
             this.Especialidad = new System.Windows.Forms.Label();
             this.Correo = new System.Windows.Forms.Label();
             this.Cedula = new System.Windows.Forms.Label();
@@ -60,15 +60,15 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btonCancelar);
+            this.groupBox1.Controls.Add(this.btonRegistrar);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textCedula);
+            this.groupBox1.Controls.Add(this.textMail);
+            this.groupBox1.Controls.Add(this.textTelefono);
+            this.groupBox1.Controls.Add(this.textApellidoM);
+            this.groupBox1.Controls.Add(this.textApellidoP);
+            this.groupBox1.Controls.Add(this.textNombreM);
             this.groupBox1.Controls.Add(this.Especialidad);
             this.groupBox1.Controls.Add(this.Correo);
             this.groupBox1.Controls.Add(this.Cedula);
@@ -85,28 +85,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo Medico";
             // 
-            // button2
+            // btonCancelar
             // 
-            this.button2.AutoSize = true;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(224, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 31);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btonCancelar.AutoSize = true;
+            this.btonCancelar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btonCancelar.Location = new System.Drawing.Point(224, 284);
+            this.btonCancelar.Name = "btonCancelar";
+            this.btonCancelar.Size = new System.Drawing.Size(90, 31);
+            this.btonCancelar.TabIndex = 16;
+            this.btonCancelar.Text = "Cancelar";
+            this.btonCancelar.UseVisualStyleBackColor = true;
+            this.btonCancelar.Click += new System.EventHandler(this.btonCancelar_Click);
             // 
-            // button1
+            // btonRegistrar
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(403, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 31);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btonRegistrar.AutoSize = true;
+            this.btonRegistrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btonRegistrar.Location = new System.Drawing.Point(403, 284);
+            this.btonRegistrar.Name = "btonRegistrar";
+            this.btonRegistrar.Size = new System.Drawing.Size(89, 31);
+            this.btonRegistrar.TabIndex = 15;
+            this.btonRegistrar.Text = "Registrar";
+            this.btonRegistrar.UseVisualStyleBackColor = true;
+            this.btonRegistrar.Click += new System.EventHandler(this.btonRegistrar_Click);
             // 
             // comboBox1
             // 
@@ -122,53 +123,53 @@
             this.comboBox1.Size = new System.Drawing.Size(152, 29);
             this.comboBox1.TabIndex = 14;
             // 
-            // textBox6
+            // textCedula
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(433, 68);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 28);
-            this.textBox6.TabIndex = 13;
+            this.textCedula.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCedula.Location = new System.Drawing.Point(433, 68);
+            this.textCedula.Name = "textCedula";
+            this.textCedula.Size = new System.Drawing.Size(152, 28);
+            this.textCedula.TabIndex = 13;
             // 
-            // textBox5
+            // textMail
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(224, 143);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 28);
-            this.textBox5.TabIndex = 12;
+            this.textMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMail.Location = new System.Drawing.Point(224, 143);
+            this.textMail.Name = "textMail";
+            this.textMail.Size = new System.Drawing.Size(152, 28);
+            this.textMail.TabIndex = 12;
             // 
-            // textBox4
+            // textTelefono
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(218, 68);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 28);
-            this.textBox4.TabIndex = 11;
+            this.textTelefono.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTelefono.Location = new System.Drawing.Point(218, 68);
+            this.textTelefono.Name = "textTelefono";
+            this.textTelefono.Size = new System.Drawing.Size(152, 28);
+            this.textTelefono.TabIndex = 11;
             // 
-            // textBox3
+            // textApellidoM
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(13, 224);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 28);
-            this.textBox3.TabIndex = 10;
+            this.textApellidoM.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textApellidoM.Location = new System.Drawing.Point(13, 224);
+            this.textApellidoM.Name = "textApellidoM";
+            this.textApellidoM.Size = new System.Drawing.Size(152, 28);
+            this.textApellidoM.TabIndex = 10;
             // 
-            // textBox2
+            // textApellidoP
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(13, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 28);
-            this.textBox2.TabIndex = 9;
+            this.textApellidoP.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textApellidoP.Location = new System.Drawing.Point(13, 144);
+            this.textApellidoP.Name = "textApellidoP";
+            this.textApellidoP.Size = new System.Drawing.Size(152, 28);
+            this.textApellidoP.TabIndex = 9;
             // 
-            // textBox1
+            // textNombreM
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 28);
-            this.textBox1.TabIndex = 8;
+            this.textNombreM.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNombreM.Location = new System.Drawing.Point(13, 68);
+            this.textNombreM.Name = "textNombreM";
+            this.textNombreM.Size = new System.Drawing.Size(152, 28);
+            this.textNombreM.TabIndex = 8;
             // 
             // Especialidad
             // 
@@ -262,18 +263,18 @@
         private System.Windows.Forms.Label ApellidoM;
         private System.Windows.Forms.Label ApellidoP;
         private System.Windows.Forms.Label Nombre;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textTelefono;
+        private System.Windows.Forms.TextBox textApellidoM;
+        private System.Windows.Forms.TextBox textApellidoP;
+        private System.Windows.Forms.TextBox textNombreM;
         private System.Windows.Forms.Label Especialidad;
         private System.Windows.Forms.Label Correo;
         private System.Windows.Forms.Label Cedula;
         private System.Windows.Forms.Label Telefono;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textCedula;
+        private System.Windows.Forms.TextBox textMail;
+        private System.Windows.Forms.Button btonCancelar;
+        private System.Windows.Forms.Button btonRegistrar;
     }
 }
