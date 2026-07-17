@@ -113,6 +113,7 @@
             this.btn_cerrar_Sesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_cerrar_Sesion.TabIndex = 11;
             this.btn_cerrar_Sesion.TabStop = false;
+            this.btn_cerrar_Sesion.Click += new System.EventHandler(this.btn_cerrar_Sesion_Click);
             this.btn_cerrar_Sesion.MouseLeave += new System.EventHandler(this.btn_cerrar_Sesion_MouseLeave);
             this.btn_cerrar_Sesion.MouseHover += new System.EventHandler(this.btn_cerrar_Sesion_MouseHover);
             // 
@@ -126,6 +127,7 @@
             this.btn_ayuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_ayuda.TabIndex = 10;
             this.btn_ayuda.TabStop = false;
+            this.btn_ayuda.Click += new System.EventHandler(this.btn_ayuda_Click);
             this.btn_ayuda.MouseLeave += new System.EventHandler(this.btn_ayuda_MouseLeave);
             this.btn_ayuda.MouseHover += new System.EventHandler(this.btn_ayuda_MouseHover);
             // 
