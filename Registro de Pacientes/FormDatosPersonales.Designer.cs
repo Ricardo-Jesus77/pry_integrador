@@ -78,12 +78,14 @@
             // 
             // BtonSiguiente
             // 
+            this.BtonSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.BtonSiguiente.ForeColor = System.Drawing.Color.White;
             this.BtonSiguiente.Location = new System.Drawing.Point(496, 486);
             this.BtonSiguiente.Name = "BtonSiguiente";
             this.BtonSiguiente.Size = new System.Drawing.Size(85, 30);
             this.BtonSiguiente.TabIndex = 16;
             this.BtonSiguiente.Text = "Siguiente";
-            this.BtonSiguiente.UseVisualStyleBackColor = true;
+            this.BtonSiguiente.UseVisualStyleBackColor = false;
             this.BtonSiguiente.Click += new System.EventHandler(this.BtonSiguiente_Click);
             // 
             // Indicador
@@ -111,7 +113,7 @@
             // EstadoCivil
             // 
             this.EstadoCivil.AutoSize = true;
-            this.EstadoCivil.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.EstadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.EstadoCivil.Location = new System.Drawing.Point(467, 364);
             this.EstadoCivil.Name = "EstadoCivil";
             this.EstadoCivil.Size = new System.Drawing.Size(91, 20);
@@ -128,7 +130,7 @@
             // Nacionalidad
             // 
             this.Nacionalidad.AutoSize = true;
-            this.Nacionalidad.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.Nacionalidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Nacionalidad.Location = new System.Drawing.Point(135, 364);
             this.Nacionalidad.Name = "Nacionalidad";
             this.Nacionalidad.Size = new System.Drawing.Size(100, 20);
@@ -151,7 +153,7 @@
             // Genero
             // 
             this.Genero.AutoSize = true;
-            this.Genero.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.Genero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Genero.Location = new System.Drawing.Point(467, 278);
             this.Genero.Name = "Genero";
             this.Genero.Size = new System.Drawing.Size(63, 20);
@@ -168,7 +170,7 @@
             // FechaN
             // 
             this.FechaN.AutoSize = true;
-            this.FechaN.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.FechaN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.FechaN.Location = new System.Drawing.Point(135, 278);
             this.FechaN.Name = "FechaN";
             this.FechaN.Size = new System.Drawing.Size(159, 20);
@@ -185,7 +187,7 @@
             // Apellidos
             // 
             this.Apellidos.AutoSize = true;
-            this.Apellidos.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.Apellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Apellidos.Location = new System.Drawing.Point(467, 193);
             this.Apellidos.Name = "Apellidos";
             this.Apellidos.Size = new System.Drawing.Size(73, 20);
@@ -202,7 +204,7 @@
             // Nombre
             // 
             this.Nombre.AutoSize = true;
-            this.Nombre.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Nombre.Location = new System.Drawing.Point(135, 193);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(83, 20);

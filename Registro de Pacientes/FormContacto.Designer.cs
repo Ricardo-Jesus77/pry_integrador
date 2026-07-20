@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormContacto));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtonAnterior = new System.Windows.Forms.Button();
+            this.BtonSiguiente = new System.Windows.Forms.Button();
+            this.Indicador2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Relacion = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TelefonoE = new System.Windows.Forms.Label();
             this.NombreE = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.ContactoE = new System.Windows.Forms.Label();
@@ -48,13 +55,6 @@
             this.Telefono = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TelefonoE = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.Relacion = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Indicador2 = new System.Windows.Forms.Label();
-            this.BtonSiguiente = new System.Windows.Forms.Button();
-            this.BtonAnterior = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,9 +92,83 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // BtonAnterior
+            // 
+            this.BtonAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.BtonAnterior.ForeColor = System.Drawing.Color.White;
+            this.BtonAnterior.Location = new System.Drawing.Point(142, 581);
+            this.BtonAnterior.Name = "BtonAnterior";
+            this.BtonAnterior.Size = new System.Drawing.Size(76, 34);
+            this.BtonAnterior.TabIndex = 32;
+            this.BtonAnterior.Text = "Anterior";
+            this.BtonAnterior.UseVisualStyleBackColor = false;
+            // 
+            // BtonSiguiente
+            // 
+            this.BtonSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.BtonSiguiente.ForeColor = System.Drawing.Color.White;
+            this.BtonSiguiente.Location = new System.Drawing.Point(551, 582);
+            this.BtonSiguiente.Name = "BtonSiguiente";
+            this.BtonSiguiente.Size = new System.Drawing.Size(94, 33);
+            this.BtonSiguiente.TabIndex = 31;
+            this.BtonSiguiente.Text = "Siguiente";
+            this.BtonSiguiente.UseVisualStyleBackColor = false;
+            // 
+            // Indicador2
+            // 
+            this.Indicador2.AutoSize = true;
+            this.Indicador2.ForeColor = System.Drawing.Color.Gray;
+            this.Indicador2.Location = new System.Drawing.Point(338, 595);
+            this.Indicador2.Name = "Indicador2";
+            this.Indicador2.Size = new System.Drawing.Size(93, 20);
+            this.Indicador2.TabIndex = 30;
+            this.Indicador2.Text = "Paso 2 de 3";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Padre",
+            "Madre",
+            "Hemano(a)",
+            "Esposo(a)",
+            "Otro"});
+            this.comboBox1.Location = new System.Drawing.Point(497, 481);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(128, 28);
+            this.comboBox1.TabIndex = 29;
+            // 
+            // Relacion
+            // 
+            this.Relacion.AutoSize = true;
+            this.Relacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Relacion.Location = new System.Drawing.Point(493, 457);
+            this.Relacion.Name = "Relacion";
+            this.Relacion.Size = new System.Drawing.Size(182, 20);
+            this.Relacion.TabIndex = 28;
+            this.Relacion.Text = "Relacion con el paciente";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(493, 406);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(127, 26);
+            this.textBox8.TabIndex = 27;
+            // 
+            // TelefonoE
+            // 
+            this.TelefonoE.AutoSize = true;
+            this.TelefonoE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.TelefonoE.Location = new System.Drawing.Point(489, 383);
+            this.TelefonoE.Name = "TelefonoE";
+            this.TelefonoE.Size = new System.Drawing.Size(71, 20);
+            this.TelefonoE.TabIndex = 26;
+            this.TelefonoE.Text = "Telefono";
+            // 
             // NombreE
             // 
             this.NombreE.AutoSize = true;
+            this.NombreE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.NombreE.Location = new System.Drawing.Point(485, 308);
             this.NombreE.Name = "NombreE";
             this.NombreE.Size = new System.Drawing.Size(65, 20);
@@ -111,9 +185,11 @@
             // ContactoE
             // 
             this.ContactoE.AutoSize = true;
-            this.ContactoE.Location = new System.Drawing.Point(460, 233);
+            this.ContactoE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactoE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.ContactoE.Location = new System.Drawing.Point(485, 256);
             this.ContactoE.Name = "ContactoE";
-            this.ContactoE.Size = new System.Drawing.Size(185, 20);
+            this.ContactoE.Size = new System.Drawing.Size(207, 20);
             this.ContactoE.TabIndex = 23;
             this.ContactoE.Text = "Contacto de Emergencia";
             // 
@@ -172,6 +248,7 @@
             // CP
             // 
             this.CP.AutoSize = true;
+            this.CP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.CP.Location = new System.Drawing.Point(148, 458);
             this.CP.Name = "CP";
             this.CP.Size = new System.Drawing.Size(107, 20);
@@ -181,6 +258,7 @@
             // Estado
             // 
             this.Estado.AutoSize = true;
+            this.Estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Estado.Location = new System.Drawing.Point(148, 383);
             this.Estado.Name = "Estado";
             this.Estado.Size = new System.Drawing.Size(60, 20);
@@ -190,6 +268,7 @@
             // Ciudad
             // 
             this.Ciudad.AutoSize = true;
+            this.Ciudad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Ciudad.Location = new System.Drawing.Point(148, 308);
             this.Ciudad.Name = "Ciudad";
             this.Ciudad.Size = new System.Drawing.Size(59, 20);
@@ -199,6 +278,7 @@
             // Direccion
             // 
             this.Direccion.AutoSize = true;
+            this.Direccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Direccion.Location = new System.Drawing.Point(147, 233);
             this.Direccion.Name = "Direccion";
             this.Direccion.Size = new System.Drawing.Size(75, 20);
@@ -208,6 +288,7 @@
             // Correo
             // 
             this.Correo.AutoSize = true;
+            this.Correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Correo.Location = new System.Drawing.Point(485, 161);
             this.Correo.Name = "Correo";
             this.Correo.Size = new System.Drawing.Size(140, 20);
@@ -217,6 +298,7 @@
             // Telefono
             // 
             this.Telefono.AutoSize = true;
+            this.Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Telefono.Location = new System.Drawing.Point(147, 161);
             this.Telefono.Name = "Telefono";
             this.Telefono.Size = new System.Drawing.Size(71, 20);
@@ -241,73 +323,6 @@
             this.label1.Size = new System.Drawing.Size(317, 42);
             this.label1.TabIndex = 8;
             this.label1.Text = "Datos de Contacto";
-            // 
-            // TelefonoE
-            // 
-            this.TelefonoE.AutoSize = true;
-            this.TelefonoE.Location = new System.Drawing.Point(489, 383);
-            this.TelefonoE.Name = "TelefonoE";
-            this.TelefonoE.Size = new System.Drawing.Size(71, 20);
-            this.TelefonoE.TabIndex = 26;
-            this.TelefonoE.Text = "Telefono";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(493, 406);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(127, 26);
-            this.textBox8.TabIndex = 27;
-            // 
-            // Relacion
-            // 
-            this.Relacion.AutoSize = true;
-            this.Relacion.Location = new System.Drawing.Point(493, 457);
-            this.Relacion.Name = "Relacion";
-            this.Relacion.Size = new System.Drawing.Size(182, 20);
-            this.Relacion.TabIndex = 28;
-            this.Relacion.Text = "Relacion con el paciente";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Padre",
-            "Madre",
-            "Hemano(a)",
-            "Esposo(a)",
-            "Otro"});
-            this.comboBox1.Location = new System.Drawing.Point(497, 481);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(128, 28);
-            this.comboBox1.TabIndex = 29;
-            // 
-            // Indicador2
-            // 
-            this.Indicador2.AutoSize = true;
-            this.Indicador2.ForeColor = System.Drawing.Color.Gray;
-            this.Indicador2.Location = new System.Drawing.Point(338, 595);
-            this.Indicador2.Name = "Indicador2";
-            this.Indicador2.Size = new System.Drawing.Size(93, 20);
-            this.Indicador2.TabIndex = 30;
-            this.Indicador2.Text = "Paso 2 de 3";
-            // 
-            // BtonSiguiente
-            // 
-            this.BtonSiguiente.Location = new System.Drawing.Point(551, 582);
-            this.BtonSiguiente.Name = "BtonSiguiente";
-            this.BtonSiguiente.Size = new System.Drawing.Size(94, 33);
-            this.BtonSiguiente.TabIndex = 31;
-            this.BtonSiguiente.Text = "Siguiente";
-            this.BtonSiguiente.UseVisualStyleBackColor = true;
-            // 
-            // BtonAnterior
-            // 
-            this.BtonAnterior.Location = new System.Drawing.Point(142, 581);
-            this.BtonAnterior.Name = "BtonAnterior";
-            this.BtonAnterior.Size = new System.Drawing.Size(76, 34);
-            this.BtonAnterior.TabIndex = 32;
-            this.BtonAnterior.Text = "Anterior";
-            this.BtonAnterior.UseVisualStyleBackColor = true;
             // 
             // FormContacto
             // 
