@@ -184,6 +184,9 @@ namespace pry_integrador
         private void btn_medicos_Click(object sender, EventArgs e)
         {
             CargarVista(new FormGestionMedicos());
+        }
+            
+
 
         }
         private void label1_Click(object sender, EventArgs e)

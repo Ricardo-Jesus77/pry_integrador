@@ -142,6 +142,8 @@
     <EmbeddedResource Include="UserControl\FormAgendaCitas.resx">
       <DependentUpon>FormAgendaCitas.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Documentacion\DOCUMENTACION.pdf" />
+    <None Include="Documentacion\Guia de estilos.pdf" />
     <EmbeddedResource Include="UserControl\FormCerrarSesion.resx">
       <DependentUpon>FormCerrarSesion.cs</DependentUpon>
     </EmbeddedResource>
