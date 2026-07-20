@@ -88,25 +88,29 @@
             // btonCancelar
             // 
             this.btonCancelar.AutoSize = true;
+            this.btonCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.btonCancelar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btonCancelar.ForeColor = System.Drawing.Color.White;
             this.btonCancelar.Location = new System.Drawing.Point(224, 284);
             this.btonCancelar.Name = "btonCancelar";
             this.btonCancelar.Size = new System.Drawing.Size(90, 31);
             this.btonCancelar.TabIndex = 16;
             this.btonCancelar.Text = "Cancelar";
-            this.btonCancelar.UseVisualStyleBackColor = true;
+            this.btonCancelar.UseVisualStyleBackColor = false;
             this.btonCancelar.Click += new System.EventHandler(this.btonCancelar_Click);
             // 
             // btonRegistrar
             // 
             this.btonRegistrar.AutoSize = true;
+            this.btonRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.btonRegistrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btonRegistrar.ForeColor = System.Drawing.Color.White;
             this.btonRegistrar.Location = new System.Drawing.Point(403, 284);
             this.btonRegistrar.Name = "btonRegistrar";
             this.btonRegistrar.Size = new System.Drawing.Size(89, 31);
             this.btonRegistrar.TabIndex = 15;
             this.btonRegistrar.Text = "Registrar";
-            this.btonRegistrar.UseVisualStyleBackColor = true;
+            this.btonRegistrar.UseVisualStyleBackColor = false;
             this.btonRegistrar.Click += new System.EventHandler(this.btonRegistrar_Click);
             // 
             // comboBox1
@@ -175,6 +179,7 @@
             // 
             this.Especialidad.AutoSize = true;
             this.Especialidad.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Especialidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Especialidad.Location = new System.Drawing.Point(429, 120);
             this.Especialidad.Name = "Especialidad";
             this.Especialidad.Size = new System.Drawing.Size(103, 21);
@@ -185,6 +190,7 @@
             // 
             this.Correo.AutoSize = true;
             this.Correo.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Correo.Location = new System.Drawing.Point(220, 120);
             this.Correo.Name = "Correo";
             this.Correo.Size = new System.Drawing.Size(143, 21);
@@ -195,6 +201,7 @@
             // 
             this.Cedula.AutoSize = true;
             this.Cedula.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cedula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Cedula.Location = new System.Drawing.Point(429, 44);
             this.Cedula.Name = "Cedula";
             this.Cedula.Size = new System.Drawing.Size(153, 21);
@@ -205,6 +212,7 @@
             // 
             this.Telefono.AutoSize = true;
             this.Telefono.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Telefono.Location = new System.Drawing.Point(220, 44);
             this.Telefono.Name = "Telefono";
             this.Telefono.Size = new System.Drawing.Size(77, 21);
@@ -215,6 +223,7 @@
             // 
             this.ApellidoM.AutoSize = true;
             this.ApellidoM.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApellidoM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.ApellidoM.Location = new System.Drawing.Point(15, 200);
             this.ApellidoM.Name = "ApellidoM";
             this.ApellidoM.Size = new System.Drawing.Size(143, 21);
@@ -225,6 +234,7 @@
             // 
             this.ApellidoP.AutoSize = true;
             this.ApellidoP.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApellidoP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.ApellidoP.Location = new System.Drawing.Point(15, 120);
             this.ApellidoP.Name = "ApellidoP";
             this.ApellidoP.Size = new System.Drawing.Size(137, 21);
@@ -235,6 +245,7 @@
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.Nombre.Location = new System.Drawing.Point(9, 44);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(90, 21);
