@@ -3,6 +3,7 @@ using pry_integrador.UserControl;
 using pry_integrador.Medicos.Gestion_de_medicos;
 using pry_integrador.Medicos.Registro_de_medicos;
 using pry_integrador.Registro_de_Pacientes;
+using pry_integrador.Pruebas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -185,8 +186,11 @@ namespace pry_integrador
         private void btn_medicos_Click(object sender, EventArgs e)
         {
             CargarVista(new FormGestionMedicos());
-
         }
+            
+
+
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
