@@ -74,7 +74,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(42)))), ((int)(((byte)(39)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(873, 39);
+            this.button2.Location = new System.Drawing.Point(888, 39);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 32);
             this.button2.TabIndex = 4;
@@ -87,7 +87,7 @@
             this.btonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(120)))), ((int)(((byte)(228)))));
             this.btonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btonEditar.ForeColor = System.Drawing.Color.White;
-            this.btonEditar.Location = new System.Drawing.Point(748, 39);
+            this.btonEditar.Location = new System.Drawing.Point(747, 39);
             this.btonEditar.Name = "btonEditar";
             this.btonEditar.Size = new System.Drawing.Size(119, 32);
             this.btonEditar.TabIndex = 4;
@@ -100,7 +100,7 @@
             this.btonNMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
             this.btonNMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btonNMedico.ForeColor = System.Drawing.Color.White;
-            this.btonNMedico.Location = new System.Drawing.Point(621, 39);
+            this.btonNMedico.Location = new System.Drawing.Point(608, 39);
             this.btonNMedico.Name = "btonNMedico";
             this.btonNMedico.Size = new System.Drawing.Size(121, 32);
             this.btonNMedico.TabIndex = 3;

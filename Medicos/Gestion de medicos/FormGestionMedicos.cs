@@ -19,8 +19,6 @@ namespace pry_integrador.Medicos.Gestion_de_medicos
         public FormGestionMedicos()
         {
             InitializeComponent();
-            
-
         }
 
         private void CargarMedicos()
