@@ -30,28 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGestionMedicos));
             this.pnelSup = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btonEditar = new System.Windows.Forms.Button();
+            this.btonNMedico = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnelContenido = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvMedicos = new System.Windows.Forms.DataGridView();
+            this.id_medico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido_paterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido_materno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo_electronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.especialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnelSup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnelContenido.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicos)).BeginInit();
             this.SuspendLayout();
             // 
             // pnelSup
             // 
             this.pnelSup.AutoScroll = true;
             this.pnelSup.BackColor = System.Drawing.Color.White;
-            this.pnelSup.Controls.Add(this.button1);
+            this.pnelSup.Controls.Add(this.button2);
+            this.pnelSup.Controls.Add(this.btonEditar);
+            this.pnelSup.Controls.Add(this.btonNMedico);
             this.pnelSup.Controls.Add(this.pictureBox1);
             this.pnelSup.Controls.Add(this.textBox1);
             this.pnelSup.Controls.Add(this.label1);
@@ -61,18 +68,45 @@
             this.pnelSup.Size = new System.Drawing.Size(1606, 90);
             this.pnelSup.TabIndex = 0;
             // 
-            // button1
+            // button2
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(621, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Nuevo Medico";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(42)))), ((int)(((byte)(39)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(888, 39);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 32);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Eliminar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btonEditar
+            // 
+            this.btonEditar.AutoSize = true;
+            this.btonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(120)))), ((int)(((byte)(228)))));
+            this.btonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btonEditar.ForeColor = System.Drawing.Color.White;
+            this.btonEditar.Location = new System.Drawing.Point(747, 39);
+            this.btonEditar.Name = "btonEditar";
+            this.btonEditar.Size = new System.Drawing.Size(119, 32);
+            this.btonEditar.TabIndex = 4;
+            this.btonEditar.Text = "Editar";
+            this.btonEditar.UseVisualStyleBackColor = false;
+            // 
+            // btonNMedico
+            // 
+            this.btonNMedico.AutoSize = true;
+            this.btonNMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.btonNMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btonNMedico.ForeColor = System.Drawing.Color.White;
+            this.btonNMedico.Location = new System.Drawing.Point(608, 39);
+            this.btonNMedico.Name = "btonNMedico";
+            this.btonNMedico.Size = new System.Drawing.Size(121, 32);
+            this.btonNMedico.TabIndex = 3;
+            this.btonNMedico.Text = "Nuevo Medico";
+            this.btonNMedico.UseVisualStyleBackColor = false;
+            this.btonNMedico.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -86,9 +120,10 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(50, 43);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 26);
+            this.textBox1.Size = new System.Drawing.Size(356, 26);
             this.textBox1.TabIndex = 1;
             // 
             // label1
@@ -105,65 +140,104 @@
             // 
             this.pnelContenido.AutoSize = true;
             this.pnelContenido.BackColor = System.Drawing.Color.White;
-            this.pnelContenido.Controls.Add(this.dataGridView1);
+            this.pnelContenido.Controls.Add(this.dgvMedicos);
             this.pnelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnelContenido.Location = new System.Drawing.Point(0, 90);
             this.pnelContenido.Name = "pnelContenido";
             this.pnelContenido.Size = new System.Drawing.Size(1606, 671);
             this.pnelContenido.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvMedicos
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNombre,
-            this.colTelefono,
-            this.colCedula,
-            this.colEspecialidad,
-            this.colCorreo});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1606, 671);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvMedicos.AllowUserToAddRows = false;
+            this.dgvMedicos.AllowUserToDeleteRows = false;
+            this.dgvMedicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMedicos.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMedicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedicos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_medico,
+            this.nombre,
+            this.apellido_paterno,
+            this.apellido_materno,
+            this.telefono,
+            this.correo_electronico,
+            this.cedula,
+            this.especialidad});
+            this.dgvMedicos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMedicos.Location = new System.Drawing.Point(0, 0);
+            this.dgvMedicos.MultiSelect = false;
+            this.dgvMedicos.Name = "dgvMedicos";
+            this.dgvMedicos.ReadOnly = true;
+            this.dgvMedicos.RowHeadersWidth = 62;
+            this.dgvMedicos.RowTemplate.Height = 28;
+            this.dgvMedicos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMedicos.Size = new System.Drawing.Size(1606, 671);
+            this.dgvMedicos.TabIndex = 1;
             // 
-            // colNombre
+            // id_medico
             // 
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.MinimumWidth = 8;
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Width = 150;
+            this.id_medico.DataPropertyName = "id_medico";
+            this.id_medico.HeaderText = "Id_medico";
+            this.id_medico.MinimumWidth = 8;
+            this.id_medico.Name = "id_medico";
+            this.id_medico.ReadOnly = true;
+            this.id_medico.Visible = false;
             // 
-            // colTelefono
+            // nombre
             // 
-            this.colTelefono.HeaderText = "Telefono";
-            this.colTelefono.MinimumWidth = 8;
-            this.colTelefono.Name = "colTelefono";
-            this.colTelefono.Width = 150;
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 8;
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
             // 
-            // colCedula
+            // apellido_paterno
             // 
-            this.colCedula.HeaderText = "Cedula Profesional";
-            this.colCedula.MinimumWidth = 8;
-            this.colCedula.Name = "colCedula";
-            this.colCedula.Width = 150;
+            this.apellido_paterno.DataPropertyName = "apellido_paterno";
+            this.apellido_paterno.HeaderText = "Apellido Paterno";
+            this.apellido_paterno.MinimumWidth = 8;
+            this.apellido_paterno.Name = "apellido_paterno";
+            this.apellido_paterno.ReadOnly = true;
             // 
-            // colEspecialidad
+            // apellido_materno
             // 
-            this.colEspecialidad.HeaderText = "Especialidad";
-            this.colEspecialidad.MinimumWidth = 8;
-            this.colEspecialidad.Name = "colEspecialidad";
-            this.colEspecialidad.Width = 150;
+            this.apellido_materno.DataPropertyName = "apellido_materno";
+            this.apellido_materno.HeaderText = "Apellido Materno";
+            this.apellido_materno.MinimumWidth = 8;
+            this.apellido_materno.Name = "apellido_materno";
+            this.apellido_materno.ReadOnly = true;
             // 
-            // colCorreo
+            // telefono
             // 
-            this.colCorreo.HeaderText = "Correo Electronico";
-            this.colCorreo.MinimumWidth = 8;
-            this.colCorreo.Name = "colCorreo";
-            this.colCorreo.Width = 150;
+            this.telefono.DataPropertyName = "telefono";
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.MinimumWidth = 8;
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // correo_electronico
+            // 
+            this.correo_electronico.DataPropertyName = "correo_electronico";
+            this.correo_electronico.HeaderText = "Correo Electronico";
+            this.correo_electronico.MinimumWidth = 8;
+            this.correo_electronico.Name = "correo_electronico";
+            this.correo_electronico.ReadOnly = true;
+            // 
+            // cedula
+            // 
+            this.cedula.DataPropertyName = "cedula";
+            this.cedula.HeaderText = "Cedula Profesional";
+            this.cedula.MinimumWidth = 8;
+            this.cedula.Name = "cedula";
+            this.cedula.ReadOnly = true;
+            // 
+            // especialidad
+            // 
+            this.especialidad.DataPropertyName = "especialidad";
+            this.especialidad.HeaderText = "Especialidad";
+            this.especialidad.MinimumWidth = 8;
+            this.especialidad.Name = "especialidad";
+            this.especialidad.ReadOnly = true;
             // 
             // FormGestionMedicos
             // 
@@ -174,11 +248,12 @@
             this.Controls.Add(this.pnelSup);
             this.Name = "FormGestionMedicos";
             this.Text = "FormGestionMedicos";
+            this.Load += new System.EventHandler(this.FormGestionMedicos_Load);
             this.pnelSup.ResumeLayout(false);
             this.pnelSup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnelContenido.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,14 +264,19 @@
         private System.Windows.Forms.Panel pnelSup;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btonNMedico;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnelContenido;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTelefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCedula;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEspecialidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCorreo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btonEditar;
+        private System.Windows.Forms.DataGridView dgvMedicos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_medico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellido_paterno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellido_materno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo_electronico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cedula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn especialidad;
     }
 }

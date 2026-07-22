@@ -2,6 +2,7 @@
 using pry_integrador.UserControl;
 using pry_integrador.Medicos.Gestion_de_medicos;
 using pry_integrador.Medicos.Registro_de_medicos;
+using pry_integrador.Pruebas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
