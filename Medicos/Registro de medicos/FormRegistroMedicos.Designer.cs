@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btonCancelar = new System.Windows.Forms.Button();
             this.btonRegistrar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboEspecialidad = new System.Windows.Forms.ComboBox();
             this.textCedula = new System.Windows.Forms.TextBox();
             this.textMail = new System.Windows.Forms.TextBox();
             this.textTelefono = new System.Windows.Forms.TextBox();
@@ -46,6 +46,7 @@
             this.ApellidoM = new System.Windows.Forms.Label();
             this.ApellidoP = new System.Windows.Forms.Label();
             this.Nombre = new System.Windows.Forms.Label();
+            this.btonLimpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +61,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.btonLimpiar);
             this.groupBox1.Controls.Add(this.btonCancelar);
             this.groupBox1.Controls.Add(this.btonRegistrar);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboEspecialidad);
             this.groupBox1.Controls.Add(this.textCedula);
             this.groupBox1.Controls.Add(this.textMail);
             this.groupBox1.Controls.Add(this.textTelefono);
@@ -89,11 +91,12 @@
             // 
             this.btonCancelar.AutoSize = true;
             this.btonCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.btonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btonCancelar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btonCancelar.ForeColor = System.Drawing.Color.White;
-            this.btonCancelar.Location = new System.Drawing.Point(224, 284);
+            this.btonCancelar.Location = new System.Drawing.Point(250, 296);
             this.btonCancelar.Name = "btonCancelar";
-            this.btonCancelar.Size = new System.Drawing.Size(90, 31);
+            this.btonCancelar.Size = new System.Drawing.Size(90, 33);
             this.btonCancelar.TabIndex = 16;
             this.btonCancelar.Text = "Cancelar";
             this.btonCancelar.UseVisualStyleBackColor = false;
@@ -103,29 +106,30 @@
             // 
             this.btonRegistrar.AutoSize = true;
             this.btonRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.btonRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btonRegistrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btonRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btonRegistrar.Location = new System.Drawing.Point(403, 284);
+            this.btonRegistrar.Location = new System.Drawing.Point(496, 296);
             this.btonRegistrar.Name = "btonRegistrar";
-            this.btonRegistrar.Size = new System.Drawing.Size(89, 31);
+            this.btonRegistrar.Size = new System.Drawing.Size(89, 33);
             this.btonRegistrar.TabIndex = 15;
             this.btonRegistrar.Text = "Registrar";
             this.btonRegistrar.UseVisualStyleBackColor = false;
             this.btonRegistrar.Click += new System.EventHandler(this.btonRegistrar_Click);
             // 
-            // comboBox1
+            // comboEspecialidad
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboEspecialidad.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboEspecialidad.FormattingEnabled = true;
+            this.comboEspecialidad.Items.AddRange(new object[] {
             "Cirugia",
             "Medicina Interna",
             "Pediatria",
             "Traumatologia"});
-            this.comboBox1.Location = new System.Drawing.Point(433, 143);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 29);
-            this.comboBox1.TabIndex = 14;
+            this.comboEspecialidad.Location = new System.Drawing.Point(433, 143);
+            this.comboEspecialidad.Name = "comboEspecialidad";
+            this.comboEspecialidad.Size = new System.Drawing.Size(152, 29);
+            this.comboEspecialidad.TabIndex = 14;
             // 
             // textCedula
             // 
@@ -252,6 +256,21 @@
             this.Nombre.TabIndex = 1;
             this.Nombre.Text = "Nombre(s)";
             // 
+            // btonLimpiar
+            // 
+            this.btonLimpiar.AutoSize = true;
+            this.btonLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.btonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btonLimpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btonLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btonLimpiar.Location = new System.Drawing.Point(373, 296);
+            this.btonLimpiar.Name = "btonLimpiar";
+            this.btonLimpiar.Size = new System.Drawing.Size(89, 33);
+            this.btonLimpiar.TabIndex = 17;
+            this.btonLimpiar.Text = "Limpiar";
+            this.btonLimpiar.UseVisualStyleBackColor = false;
+            this.btonLimpiar.Click += new System.EventHandler(this.btonLimpiar_Click);
+            // 
             // FormRegistroMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -282,10 +301,11 @@
         private System.Windows.Forms.Label Correo;
         private System.Windows.Forms.Label Cedula;
         private System.Windows.Forms.Label Telefono;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboEspecialidad;
         private System.Windows.Forms.TextBox textCedula;
         private System.Windows.Forms.TextBox textMail;
         private System.Windows.Forms.Button btonCancelar;
         private System.Windows.Forms.Button btonRegistrar;
+        private System.Windows.Forms.Button btonLimpiar;
     }
 }
