@@ -17,6 +17,11 @@ namespace pry_integrador.Registro_de_Pacientes
             InitializeComponent();
         }
 
-       
+        private void BtonSiguiente_Click(object sender, EventArgs e)
+        {
+            FormContacto form = new FormContacto();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.ShowDialog();
+        }
     }
 }

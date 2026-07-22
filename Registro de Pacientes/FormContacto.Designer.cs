@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormContacto));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtonAnterior = new System.Windows.Forms.Button();
+            this.BtonSiguiente = new System.Windows.Forms.Button();
+            this.Indicador2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Relacion = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TelefonoE = new System.Windows.Forms.Label();
             this.NombreE = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.ContactoE = new System.Windows.Forms.Label();
@@ -48,13 +55,6 @@
             this.Telefono = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TelefonoE = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.Relacion = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Indicador2 = new System.Windows.Forms.Label();
-            this.BtonSiguiente = new System.Windows.Forms.Button();
-            this.BtonAnterior = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,185 +87,43 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(-1, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(779, 648);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(692, 518);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // NombreE
+            // BtonAnterior
             // 
-            this.NombreE.AutoSize = true;
-            this.NombreE.Location = new System.Drawing.Point(485, 308);
-            this.NombreE.Name = "NombreE";
-            this.NombreE.Size = new System.Drawing.Size(65, 20);
-            this.NombreE.TabIndex = 25;
-            this.NombreE.Text = "Nombre";
+            this.BtonAnterior.Location = new System.Drawing.Point(126, 465);
+            this.BtonAnterior.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtonAnterior.Name = "BtonAnterior";
+            this.BtonAnterior.Size = new System.Drawing.Size(68, 27);
+            this.BtonAnterior.TabIndex = 32;
+            this.BtonAnterior.Text = "Anterior";
+            this.BtonAnterior.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // BtonSiguiente
             // 
-            this.textBox7.Location = new System.Drawing.Point(489, 331);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(131, 26);
-            this.textBox7.TabIndex = 24;
+            this.BtonSiguiente.Location = new System.Drawing.Point(490, 466);
+            this.BtonSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtonSiguiente.Name = "BtonSiguiente";
+            this.BtonSiguiente.Size = new System.Drawing.Size(84, 26);
+            this.BtonSiguiente.TabIndex = 31;
+            this.BtonSiguiente.Text = "Siguiente";
+            this.BtonSiguiente.UseVisualStyleBackColor = true;
+            this.BtonSiguiente.Click += new System.EventHandler(this.BtonSiguiente_Click);
             // 
-            // ContactoE
+            // Indicador2
             // 
-            this.ContactoE.AutoSize = true;
-            this.ContactoE.Location = new System.Drawing.Point(460, 233);
-            this.ContactoE.Name = "ContactoE";
-            this.ContactoE.Size = new System.Drawing.Size(185, 20);
-            this.ContactoE.TabIndex = 23;
-            this.ContactoE.Text = "Contacto de Emergencia";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(489, 184);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(131, 26);
-            this.textBox6.TabIndex = 22;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(152, 481);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(131, 26);
-            this.textBox5.TabIndex = 21;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(151, 406);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 26);
-            this.textBox4.TabIndex = 20;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(151, 331);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 26);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(151, 256);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 26);
-            this.textBox2.TabIndex = 18;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(151, 184);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 26);
-            this.textBox1.TabIndex = 17;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(148, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // CP
-            // 
-            this.CP.AutoSize = true;
-            this.CP.Location = new System.Drawing.Point(148, 458);
-            this.CP.Name = "CP";
-            this.CP.Size = new System.Drawing.Size(107, 20);
-            this.CP.TabIndex = 15;
-            this.CP.Text = "Codigo Postal";
-            // 
-            // Estado
-            // 
-            this.Estado.AutoSize = true;
-            this.Estado.Location = new System.Drawing.Point(148, 383);
-            this.Estado.Name = "Estado";
-            this.Estado.Size = new System.Drawing.Size(60, 20);
-            this.Estado.TabIndex = 14;
-            this.Estado.Text = "Estado";
-            // 
-            // Ciudad
-            // 
-            this.Ciudad.AutoSize = true;
-            this.Ciudad.Location = new System.Drawing.Point(148, 308);
-            this.Ciudad.Name = "Ciudad";
-            this.Ciudad.Size = new System.Drawing.Size(59, 20);
-            this.Ciudad.TabIndex = 13;
-            this.Ciudad.Text = "Ciudad";
-            // 
-            // Direccion
-            // 
-            this.Direccion.AutoSize = true;
-            this.Direccion.Location = new System.Drawing.Point(147, 233);
-            this.Direccion.Name = "Direccion";
-            this.Direccion.Size = new System.Drawing.Size(75, 20);
-            this.Direccion.TabIndex = 12;
-            this.Direccion.Text = "Dirección";
-            // 
-            // Correo
-            // 
-            this.Correo.AutoSize = true;
-            this.Correo.Location = new System.Drawing.Point(485, 161);
-            this.Correo.Name = "Correo";
-            this.Correo.Size = new System.Drawing.Size(140, 20);
-            this.Correo.TabIndex = 11;
-            this.Correo.Text = "Correo Electronico";
-            // 
-            // Telefono
-            // 
-            this.Telefono.AutoSize = true;
-            this.Telefono.Location = new System.Drawing.Point(147, 161);
-            this.Telefono.Name = "Telefono";
-            this.Telefono.Size = new System.Drawing.Size(71, 20);
-            this.Telefono.TabIndex = 10;
-            this.Telefono.Text = "Telefono";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(264, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(345, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Datos de localización y contacto de emergencia";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 42);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Datos de Contacto";
-            // 
-            // TelefonoE
-            // 
-            this.TelefonoE.AutoSize = true;
-            this.TelefonoE.Location = new System.Drawing.Point(489, 383);
-            this.TelefonoE.Name = "TelefonoE";
-            this.TelefonoE.Size = new System.Drawing.Size(71, 20);
-            this.TelefonoE.TabIndex = 26;
-            this.TelefonoE.Text = "Telefono";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(493, 406);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(127, 26);
-            this.textBox8.TabIndex = 27;
-            // 
-            // Relacion
-            // 
-            this.Relacion.AutoSize = true;
-            this.Relacion.Location = new System.Drawing.Point(493, 457);
-            this.Relacion.Name = "Relacion";
-            this.Relacion.Size = new System.Drawing.Size(182, 20);
-            this.Relacion.TabIndex = 28;
-            this.Relacion.Text = "Relacion con el paciente";
+            this.Indicador2.AutoSize = true;
+            this.Indicador2.ForeColor = System.Drawing.Color.Gray;
+            this.Indicador2.Location = new System.Drawing.Point(300, 476);
+            this.Indicador2.Name = "Indicador2";
+            this.Indicador2.Size = new System.Drawing.Size(78, 16);
+            this.Indicador2.TabIndex = 30;
+            this.Indicador2.Text = "Paso 2 de 3";
             // 
             // comboBox1
             // 
@@ -276,45 +134,203 @@
             "Hemano(a)",
             "Esposo(a)",
             "Otro"});
-            this.comboBox1.Location = new System.Drawing.Point(497, 481);
+            this.comboBox1.Location = new System.Drawing.Point(442, 385);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(128, 28);
+            this.comboBox1.Size = new System.Drawing.Size(114, 24);
             this.comboBox1.TabIndex = 29;
             // 
-            // Indicador2
+            // Relacion
             // 
-            this.Indicador2.AutoSize = true;
-            this.Indicador2.ForeColor = System.Drawing.Color.Gray;
-            this.Indicador2.Location = new System.Drawing.Point(338, 595);
-            this.Indicador2.Name = "Indicador2";
-            this.Indicador2.Size = new System.Drawing.Size(93, 20);
-            this.Indicador2.TabIndex = 30;
-            this.Indicador2.Text = "Paso 2 de 3";
+            this.Relacion.AutoSize = true;
+            this.Relacion.Location = new System.Drawing.Point(438, 366);
+            this.Relacion.Name = "Relacion";
+            this.Relacion.Size = new System.Drawing.Size(155, 16);
+            this.Relacion.TabIndex = 28;
+            this.Relacion.Text = "Relacion con el paciente";
             // 
-            // BtonSiguiente
+            // textBox8
             // 
-            this.BtonSiguiente.Location = new System.Drawing.Point(551, 582);
-            this.BtonSiguiente.Name = "BtonSiguiente";
-            this.BtonSiguiente.Size = new System.Drawing.Size(94, 33);
-            this.BtonSiguiente.TabIndex = 31;
-            this.BtonSiguiente.Text = "Siguiente";
-            this.BtonSiguiente.UseVisualStyleBackColor = true;
+            this.textBox8.Location = new System.Drawing.Point(438, 325);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(113, 22);
+            this.textBox8.TabIndex = 27;
             // 
-            // BtonAnterior
+            // TelefonoE
             // 
-            this.BtonAnterior.Location = new System.Drawing.Point(142, 581);
-            this.BtonAnterior.Name = "BtonAnterior";
-            this.BtonAnterior.Size = new System.Drawing.Size(76, 34);
-            this.BtonAnterior.TabIndex = 32;
-            this.BtonAnterior.Text = "Anterior";
-            this.BtonAnterior.UseVisualStyleBackColor = true;
+            this.TelefonoE.AutoSize = true;
+            this.TelefonoE.Location = new System.Drawing.Point(435, 306);
+            this.TelefonoE.Name = "TelefonoE";
+            this.TelefonoE.Size = new System.Drawing.Size(61, 16);
+            this.TelefonoE.TabIndex = 26;
+            this.TelefonoE.Text = "Telefono";
+            // 
+            // NombreE
+            // 
+            this.NombreE.AutoSize = true;
+            this.NombreE.Location = new System.Drawing.Point(431, 246);
+            this.NombreE.Name = "NombreE";
+            this.NombreE.Size = new System.Drawing.Size(56, 16);
+            this.NombreE.TabIndex = 25;
+            this.NombreE.Text = "Nombre";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(435, 265);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(117, 22);
+            this.textBox7.TabIndex = 24;
+            // 
+            // ContactoE
+            // 
+            this.ContactoE.AutoSize = true;
+            this.ContactoE.Location = new System.Drawing.Point(409, 186);
+            this.ContactoE.Name = "ContactoE";
+            this.ContactoE.Size = new System.Drawing.Size(155, 16);
+            this.ContactoE.TabIndex = 23;
+            this.ContactoE.Text = "Contacto de Emergencia";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(435, 147);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(117, 22);
+            this.textBox6.TabIndex = 22;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(135, 385);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(117, 22);
+            this.textBox5.TabIndex = 21;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(134, 325);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(117, 22);
+            this.textBox4.TabIndex = 20;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(134, 265);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(117, 22);
+            this.textBox3.TabIndex = 19;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(134, 205);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(117, 22);
+            this.textBox2.TabIndex = 18;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(134, 147);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(117, 22);
+            this.textBox1.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(132, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // CP
+            // 
+            this.CP.AutoSize = true;
+            this.CP.Location = new System.Drawing.Point(132, 366);
+            this.CP.Name = "CP";
+            this.CP.Size = new System.Drawing.Size(92, 16);
+            this.CP.TabIndex = 15;
+            this.CP.Text = "Codigo Postal";
+            // 
+            // Estado
+            // 
+            this.Estado.AutoSize = true;
+            this.Estado.Location = new System.Drawing.Point(132, 306);
+            this.Estado.Name = "Estado";
+            this.Estado.Size = new System.Drawing.Size(50, 16);
+            this.Estado.TabIndex = 14;
+            this.Estado.Text = "Estado";
+            // 
+            // Ciudad
+            // 
+            this.Ciudad.AutoSize = true;
+            this.Ciudad.Location = new System.Drawing.Point(132, 246);
+            this.Ciudad.Name = "Ciudad";
+            this.Ciudad.Size = new System.Drawing.Size(50, 16);
+            this.Ciudad.TabIndex = 13;
+            this.Ciudad.Text = "Ciudad";
+            // 
+            // Direccion
+            // 
+            this.Direccion.AutoSize = true;
+            this.Direccion.Location = new System.Drawing.Point(131, 186);
+            this.Direccion.Name = "Direccion";
+            this.Direccion.Size = new System.Drawing.Size(64, 16);
+            this.Direccion.TabIndex = 12;
+            this.Direccion.Text = "Dirección";
+            // 
+            // Correo
+            // 
+            this.Correo.AutoSize = true;
+            this.Correo.Location = new System.Drawing.Point(431, 129);
+            this.Correo.Name = "Correo";
+            this.Correo.Size = new System.Drawing.Size(118, 16);
+            this.Correo.TabIndex = 11;
+            this.Correo.Text = "Correo Electronico";
+            // 
+            // Telefono
+            // 
+            this.Telefono.AutoSize = true;
+            this.Telefono.Location = new System.Drawing.Point(131, 129);
+            this.Telefono.Name = "Telefono";
+            this.Telefono.Size = new System.Drawing.Size(61, 16);
+            this.Telefono.TabIndex = 10;
+            this.Telefono.Text = "Telefono";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(235, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(294, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Datos de localización y contacto de emergencia";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(232, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 36);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Datos de Contacto";
             // 
             // FormContacto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 644);
+            this.ClientSize = new System.Drawing.Size(692, 515);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormContacto";
             this.Text = "FormContacto";
             this.groupBox1.ResumeLayout(false);
