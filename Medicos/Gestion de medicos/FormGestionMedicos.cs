@@ -50,6 +50,16 @@ namespace pry_integrador.Medicos.Gestion_de_medicos
 
             CargarMedicos();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btonEditar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
             
 }
