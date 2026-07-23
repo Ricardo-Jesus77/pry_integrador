@@ -17,6 +17,11 @@ namespace pry_integrador.Pruebas
             cadena = "server = localhost; Database = pruebas; Uid = root; port = 3306";
         }
 
+        internal static MySqlConnection ObtenerConexion()
+        {
+            throw new NotImplementedException();
+        }
+
         public MySqlConnection GetConnection()
         {
             try
