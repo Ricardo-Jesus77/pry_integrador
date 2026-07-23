@@ -34,7 +34,7 @@
             this.Indicador = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.EstadoCivil = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textNacionalidad = new System.Windows.Forms.TextBox();
             this.Nacionalidad = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Genero = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.FechaN = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Apellidos = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textNombreS = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Descripcion = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.groupBox1.Controls.Add(this.Indicador);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.EstadoCivil);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textNacionalidad);
             this.groupBox1.Controls.Add(this.Nacionalidad);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.Genero);
@@ -65,7 +65,7 @@
             this.groupBox1.Controls.Add(this.FechaN);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.Apellidos);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textNombreS);
             this.groupBox1.Controls.Add(this.Nombre);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.Descripcion);
@@ -80,12 +80,16 @@
             // 
             // BtonSiguiente
             // 
+            this.BtonSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.BtonSiguiente.ForeColor = System.Drawing.Color.White;
+            this.BtonSiguiente.Location = new System.Drawing.Point(496, 486);
             this.BtonSiguiente.Location = new System.Drawing.Point(441, 389);
             this.BtonSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtonSiguiente.Name = "BtonSiguiente";
             this.BtonSiguiente.Size = new System.Drawing.Size(76, 24);
             this.BtonSiguiente.TabIndex = 16;
             this.BtonSiguiente.Text = "Siguiente";
+            this.BtonSiguiente.UseVisualStyleBackColor = false;
             this.BtonSiguiente.UseVisualStyleBackColor = true;
             this.BtonSiguiente.Click += new System.EventHandler(this.BtonSiguiente_Click);
             // 
@@ -115,6 +119,8 @@
             // EstadoCivil
             // 
             this.EstadoCivil.AutoSize = true;
+            this.EstadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.EstadoCivil.Location = new System.Drawing.Point(467, 364);
             this.EstadoCivil.ForeColor = System.Drawing.SystemColors.MenuText;
             this.EstadoCivil.Location = new System.Drawing.Point(415, 291);
             this.EstadoCivil.Name = "EstadoCivil";
@@ -122,8 +128,12 @@
             this.EstadoCivil.TabIndex = 13;
             this.EstadoCivil.Text = "Estado Civil";
             // 
-            // textBox4
+            // textNacionalidad
             // 
+            this.textNacionalidad.Location = new System.Drawing.Point(129, 387);
+            this.textNacionalidad.Name = "textNacionalidad";
+            this.textNacionalidad.Size = new System.Drawing.Size(139, 26);
+            this.textNacionalidad.TabIndex = 12;
             this.textBox4.Location = new System.Drawing.Point(115, 310);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
@@ -133,6 +143,8 @@
             // Nacionalidad
             // 
             this.Nacionalidad.AutoSize = true;
+            this.Nacionalidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Nacionalidad.Location = new System.Drawing.Point(135, 364);
             this.Nacionalidad.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Nacionalidad.Location = new System.Drawing.Point(120, 291);
             this.Nacionalidad.Name = "Nacionalidad";
@@ -157,6 +169,8 @@
             // Genero
             // 
             this.Genero.AutoSize = true;
+            this.Genero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Genero.Location = new System.Drawing.Point(467, 278);
             this.Genero.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Genero.Location = new System.Drawing.Point(415, 222);
             this.Genero.Name = "Genero";
@@ -175,6 +189,8 @@
             // FechaN
             // 
             this.FechaN.AutoSize = true;
+            this.FechaN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.FechaN.Location = new System.Drawing.Point(135, 278);
             this.FechaN.ForeColor = System.Drawing.SystemColors.MenuText;
             this.FechaN.Location = new System.Drawing.Point(120, 222);
             this.FechaN.Name = "FechaN";
@@ -193,6 +209,8 @@
             // Apellidos
             // 
             this.Apellidos.AutoSize = true;
+            this.Apellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Apellidos.Location = new System.Drawing.Point(467, 193);
             this.Apellidos.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Apellidos.Location = new System.Drawing.Point(415, 154);
             this.Apellidos.Name = "Apellidos";
@@ -200,8 +218,12 @@
             this.Apellidos.TabIndex = 5;
             this.Apellidos.Text = "Apellidos";
             // 
-            // textBox1
+            // textNombreS
             // 
+            this.textNombreS.Location = new System.Drawing.Point(129, 216);
+            this.textNombreS.Name = "textNombreS";
+            this.textNombreS.Size = new System.Drawing.Size(139, 26);
+            this.textNombreS.TabIndex = 4;
             this.textBox1.Location = new System.Drawing.Point(115, 173);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
@@ -211,6 +233,8 @@
             // Nombre
             // 
             this.Nombre.AutoSize = true;
+            this.Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Nombre.Location = new System.Drawing.Point(135, 193);
             this.Nombre.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Nombre.Location = new System.Drawing.Point(120, 154);
             this.Nombre.Name = "Nombre";
@@ -275,7 +299,7 @@
         private System.Windows.Forms.Label Descripcion;
         private System.Windows.Forms.Label Nombre;
         private System.Windows.Forms.Label Apellidos;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textNombreS;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label FechaN;
@@ -283,7 +307,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label EstadoCivil;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textNacionalidad;
         private System.Windows.Forms.Label Nacionalidad;
         private System.Windows.Forms.Button BtonSiguiente;
         private System.Windows.Forms.Label Indicador;

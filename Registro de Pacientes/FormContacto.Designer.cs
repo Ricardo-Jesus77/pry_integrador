@@ -96,6 +96,25 @@
             // 
             // BtonAnterior
             // 
+            this.BtonAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.BtonAnterior.ForeColor = System.Drawing.Color.White;
+            this.BtonAnterior.Location = new System.Drawing.Point(142, 581);
+            this.BtonAnterior.Name = "BtonAnterior";
+            this.BtonAnterior.Size = new System.Drawing.Size(76, 34);
+            this.BtonAnterior.TabIndex = 32;
+            this.BtonAnterior.Text = "Anterior";
+            this.BtonAnterior.UseVisualStyleBackColor = false;
+            // 
+            // BtonSiguiente
+            // 
+            this.BtonSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.BtonSiguiente.ForeColor = System.Drawing.Color.White;
+            this.BtonSiguiente.Location = new System.Drawing.Point(551, 582);
+            this.BtonSiguiente.Name = "BtonSiguiente";
+            this.BtonSiguiente.Size = new System.Drawing.Size(94, 33);
+            this.BtonSiguiente.TabIndex = 31;
+            this.BtonSiguiente.Text = "Siguiente";
+            this.BtonSiguiente.UseVisualStyleBackColor = false;
             this.BtonAnterior.Location = new System.Drawing.Point(126, 465);
             this.BtonAnterior.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtonAnterior.Name = "BtonAnterior";
@@ -119,6 +138,9 @@
             // 
             this.Indicador2.AutoSize = true;
             this.Indicador2.ForeColor = System.Drawing.Color.Gray;
+            this.Indicador2.Location = new System.Drawing.Point(338, 595);
+            this.Indicador2.Name = "Indicador2";
+            this.Indicador2.Size = new System.Drawing.Size(93, 20);
             this.Indicador2.Location = new System.Drawing.Point(300, 476);
             this.Indicador2.Name = "Indicador2";
             this.Indicador2.Size = new System.Drawing.Size(78, 16);
@@ -134,6 +156,10 @@
             "Hemano(a)",
             "Esposo(a)",
             "Otro"});
+
+            this.comboBox1.Location = new System.Drawing.Point(497, 481);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(128, 28);
             this.comboBox1.Location = new System.Drawing.Point(442, 385);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
@@ -143,6 +169,11 @@
             // Relacion
             // 
             this.Relacion.AutoSize = true;
+
+            this.Relacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Relacion.Location = new System.Drawing.Point(493, 457);
+            this.Relacion.Name = "Relacion";
+            this.Relacion.Size = new System.Drawing.Size(182, 20);
             this.Relacion.Location = new System.Drawing.Point(438, 366);
             this.Relacion.Name = "Relacion";
             this.Relacion.Size = new System.Drawing.Size(155, 16);
@@ -151,6 +182,9 @@
             // 
             // textBox8
             // 
+            this.textBox8.Location = new System.Drawing.Point(493, 406);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(127, 26);
             this.textBox8.Location = new System.Drawing.Point(438, 325);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Name = "textBox8";
@@ -160,6 +194,10 @@
             // TelefonoE
             // 
             this.TelefonoE.AutoSize = true;
+            this.TelefonoE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.TelefonoE.Location = new System.Drawing.Point(489, 383);
+            this.TelefonoE.Name = "TelefonoE";
+            this.TelefonoE.Size = new System.Drawing.Size(71, 20);
             this.TelefonoE.Location = new System.Drawing.Point(435, 306);
             this.TelefonoE.Name = "TelefonoE";
             this.TelefonoE.Size = new System.Drawing.Size(61, 16);
@@ -169,6 +207,8 @@
             // NombreE
             // 
             this.NombreE.AutoSize = true;
+            this.NombreE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.NombreE.Location = new System.Drawing.Point(485, 308);
             this.NombreE.Location = new System.Drawing.Point(431, 246);
             this.NombreE.Name = "NombreE";
             this.NombreE.Size = new System.Drawing.Size(56, 16);
@@ -186,6 +226,11 @@
             // ContactoE
             // 
             this.ContactoE.AutoSize = true;
+            this.ContactoE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactoE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.ContactoE.Location = new System.Drawing.Point(485, 256);
+            this.ContactoE.Name = "ContactoE";
+            this.ContactoE.Size = new System.Drawing.Size(207, 20);
             this.ContactoE.Location = new System.Drawing.Point(409, 186);
             this.ContactoE.Name = "ContactoE";
             this.ContactoE.Size = new System.Drawing.Size(155, 16);
@@ -254,6 +299,8 @@
             // CP
             // 
             this.CP.AutoSize = true;
+            this.CP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.CP.Location = new System.Drawing.Point(148, 458);
             this.CP.Location = new System.Drawing.Point(132, 366);
             this.CP.Name = "CP";
             this.CP.Size = new System.Drawing.Size(92, 16);
@@ -263,6 +310,8 @@
             // Estado
             // 
             this.Estado.AutoSize = true;
+            this.Estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Estado.Location = new System.Drawing.Point(148, 383);
             this.Estado.Location = new System.Drawing.Point(132, 306);
             this.Estado.Name = "Estado";
             this.Estado.Size = new System.Drawing.Size(50, 16);
@@ -272,6 +321,8 @@
             // Ciudad
             // 
             this.Ciudad.AutoSize = true;
+            this.Ciudad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Ciudad.Location = new System.Drawing.Point(148, 308);
             this.Ciudad.Location = new System.Drawing.Point(132, 246);
             this.Ciudad.Name = "Ciudad";
             this.Ciudad.Size = new System.Drawing.Size(50, 16);
@@ -281,6 +332,8 @@
             // Direccion
             // 
             this.Direccion.AutoSize = true;
+            this.Direccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Direccion.Location = new System.Drawing.Point(147, 233);
             this.Direccion.Location = new System.Drawing.Point(131, 186);
             this.Direccion.Name = "Direccion";
             this.Direccion.Size = new System.Drawing.Size(64, 16);
@@ -290,6 +343,8 @@
             // Correo
             // 
             this.Correo.AutoSize = true;
+            this.Correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Correo.Location = new System.Drawing.Point(485, 161);
             this.Correo.Location = new System.Drawing.Point(431, 129);
             this.Correo.Name = "Correo";
             this.Correo.Size = new System.Drawing.Size(118, 16);
@@ -299,6 +354,8 @@
             // Telefono
             // 
             this.Telefono.AutoSize = true;
+            this.Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(156)))));
+            this.Telefono.Location = new System.Drawing.Point(147, 161);
             this.Telefono.Location = new System.Drawing.Point(131, 129);
             this.Telefono.Name = "Telefono";
             this.Telefono.Size = new System.Drawing.Size(61, 16);
