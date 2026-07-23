@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.data.MySqlClient;
+using pry_integrador.Pruebas;
 
 namespace pry_integrador
 {
@@ -17,6 +19,40 @@ namespace pry_integrador
             InitializeComponent();
         }
 
-       
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            MySqlConnection connection = PruebaDataAcces.ObtenerConexion();
+
+            try
+            {
+                connection.Open();
+                string query = "SELECT * FROM usuarios WHERE usuario = @usuario AND contraseña = @contraseña";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@usuario", txtUsuario.Text);
+                command.Parameters.AddWithValue("@contraseña", txtContraseña.Text);
+                MySqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    MessageBox.Show("Inicio de sesión exitoso");
+
+                    FormPrincipal menu = new FormPrincipal();
+                    menu.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos");
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }
