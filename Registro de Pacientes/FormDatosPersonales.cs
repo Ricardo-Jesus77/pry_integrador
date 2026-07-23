@@ -19,6 +19,7 @@ namespace pry_integrador.Registro_de_Pacientes
 
         private void BtonSiguiente_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(textNombreS.Text))
             {
                 MessageBox.Show(
@@ -57,6 +58,9 @@ namespace pry_integrador.Registro_de_Pacientes
                 return;
 
             }
+            FormContacto form = new FormContacto();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.ShowDialog();
         }
     }
 }
